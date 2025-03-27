@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #5aa53a;
-    color: #f8f2f2;
+    background-color: #EECFEA;
+    color: #000000;
     border: 20px solid #ffffff;
-    min-height: 100vh;     
+    min-height: 100vh;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh;   
 }
 .container {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
 }
 header {
     text-align: center;
@@ -53,9 +60,67 @@ button:hover {
     background-color: #f0f0f0;
 }
 a {
-    color: #ffffff;
+    color: #9B5E92;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
+}
+.navigation {
+    font-size: 32px;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+}
+.navigation-link {
+    margin-right: 20px;
+    
+}
+.hero {
+    text-align: center; /* Center the text */
+    margin-top: 0; /* Add some space from the top */
+}
+
+.headline {
+    font-size: 64px; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    color: #000; /* Change color as needed */
+}
+
+.subheadline {
+    font-family: 'Pacifico', cursive;
+    font-size: 64px; /* Adjust size as needed */
+    color: #9B5E92; /* Change color as needed */
+    margin: 10px 0; /* Add some space around */
+}
+
+.body-text {
+    font-size: 32px; /* Adjust size as needed */
+    color: #A970A1; /* Change color as needed */
+    margin: 5px 0; /* Add space before the button */
+}
+
+.learn-more {
+    background-color: #A970A1; /* Button color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 25px;
+    margin-top: 25px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.learn-more:hover {
+    background-color: #886283; /* Darker shade on hover */
+}
+img {
+    position: absolute; /* Position the logo absolutely */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 200px; /* Set a width for the logo */
+    height: auto; /* Maintain aspect ratio */
 }
